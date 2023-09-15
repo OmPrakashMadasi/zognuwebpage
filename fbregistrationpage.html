@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>Registration Page</title>
+    <style>
+        input:focus{
+           background-color:rgba(150, 229, 86, 0.977) ;
+        }
+        body {
+            padding: 100px 100px;
+            color: rgb(35, 19, 80);
+            background-image: url(collegestogether.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        center:hover {
+            color: #09385a;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; 
+        }
+
+        input[type="text"]:hover,
+        input[type="password"]:hover,
+        input[type="email"]:hover,
+        input[type="radio"]:hover,
+        input[type="button"]:hover {
+            background-color: rgba(255, 255, 255, 0.8); 
+        }
+
+        label:hover {
+            color: #09385a; 
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form action="congratsgif.gif" >
+            <input type="text" required="required" placeholder="First name"  autocomplete="off" style="width:175px ;" >
+            <input type="text" required="required" placeholder="Surname"  autocomplete="off" style="width:175px ;"><br>
+            <input type="text" required="required" placeholder="Mobile number or email address" style="width: 350px;" autocomplete="off" > <br>
+            <input type="password"  required="required" placeholder="New password" style="width: 350px;" > <br>
+            Gender ?
+            <input type="radio" name="gd" />Female
+            <input type="radio" name="gd" />Male
+            <input type="radio" name="gd" />Custom<br>
+            <input id ="input_year" class="date" name = "year" patren="[\d]{4}" />
+    <SELECT  id ="month2" name = "month" >
+    </SELECT>
+    <input id ="input_day" class="date" name = "day" patrin="[\d]{2}"/><br>
+    <button type="button" class="btn btn-success">Sign Up</button>        </form>
+    </center>
+</body>
+</html>
