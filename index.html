@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Zognu</title>
+    
+    <script>
+        function pageOpen(){
+            window.open("zh1.html")
+        }
+        function contactPage(){
+            window.open("zcontact.html")
+        }
+        function aboutPage(){
+            window.open("za.html")
+        }
+        function servicesPage(){
+            window.open("zs.html")
+        }
+        function careerspage(){
+            window.open("zc.html")
+        }
+        function chatBot(){
+            window.open("zchatbot.html")
+        }
+        function cloud(){
+            window.open("zpcloud.html")
+        }
+        function devops(){
+            window.open("zpdevops.html")
+        }
+    </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <style type="text/css">
+.main{
+    width: 100%;
+    background-color: white;
+    height: 500%;
+}
+.navbar {
+    width: 100%;
+    height: 100px;
+    
+
+}
+.icon {
+    width: 100px;
+    height: auto;
+    float: left;
+}
+.menu {
+    height: 70PX;
+    width: 400px;
+    display: flex;
+}
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li {
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-family:  sans-serif;
+    font-weight: bolder;
+}
+ul li a:hover {
+ color: blue;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color:cadetblue; 
+    border: 0.5px solid #ccc; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.dropdown-menu li {
+    padding: 5px;
+}
+
+.dropdown-menu li:hover {
+    background-color:orange;
+}
+
+    button{
+        float: right; background-color:dodgerblue; font-size: 20px;
+        color: white; border-radius: 30px;border: 0px;width: 100px;height:40px ;margin-top: 2.5%;
+        
+    }
+    div{
+        background-color:whitesmoke;width: 99%;
+        height: 600px;
+    }
+   
+    
+    h1{
+        font-family: sans-serif;font-style: normal;font-size: 25px;
+    }
+    h1:hover{
+        background-color: lightblue;
+    }
+    p{
+        font-family:  Tahoma;color:darkgray;font-size: 20px;line-height: 35px; 
+    }
+    p:hover{
+        color:white;
+    }
+    a{
+        text-decoration: none; margin-right: 20px;color: darkslategray;
+    }    
+
+
+
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <a href="zhrough.html"><img src="zognuImag1.jpg" class="img-thumbnail" style="background-color: rgba(255,255,255,0.5);" width="220px" height="80px" align="left"></a>
+                </div>
+                <ul id="menu" style="padding-left: 200px; font-weight: bold; " >
+                    
+                        <li><a onclick="pageOpen()">HOME</a></li>
+                        <li><a onclick="aboutPage()">ABOUT US</a></li>
+                        <li class="dropdown">
+                        <a href="#">PROJECTS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Automative</a></li>
+                                <li><a href="#">Banking </a></li>
+                                <li><a onclick="cloud()" >Cloud </a></li>
+                                <li><a onclick="devops()">Devops </a></li>
+                                <li><a href="#">AI and machine learning </a></li>
+                            </ul>
+                        <li><a onclick="servicesPage()">SERVICES</a></li>
+                        <li><a onclick="careerspage()">CAREERS</a> </li>
+                    </ul>
+                   <button onclick="contactPage()">Contact</button>
+                </header>
+    <div style=" background-image: url(https://www.ge.com/research/sites/default/files/styles/hero_banner/public/images/capabilities/2020-05/technology-domain-business-risk-analytics-hero-min.jpg?itok=P_rfpgww); background-size: cover;  width: 100%; height: 600px;">
+        <section style=" width: 48%; height: 70vh;  float: left;padding: 20px;margin-top: 2%; margin-left:45%;text-align:  center;">
+            <h1 style="color:blue; text-decoration: underline; font-style: italic; font-size: 34px;">Zognu Technologies Software company</h1>
+            <p style="padding: 15px; cursor: crosshair;">Zognu Technologies is a leading global professional services company  that helps the world’s leading businesses, governments and other organizations build their digital core, optimize their operations, accelerate revenue growth and enhance citizen services—creating tangible value at speed and scale.</p>
+            <button style=" float: left; width: 150px; margin-left: 80px;">To know more</button>
+        </section>
+    </div>
+    <button onclick="chatBot()" >chatbot</button>
+</body>
+</html>
