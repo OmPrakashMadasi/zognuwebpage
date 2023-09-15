@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="zognuImag1.jpg" rel="fav icon">
+    <title>Join Our Community</title>
+    <style>
+        input:focus{
+           background-color:rgba(150, 229, 86, 0.977) ;
+        }
+        body {
+            padding: 100px 100px;
+            color: rgb(35, 19, 80);
+            background-image: url(programming.gif);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        center:hover {
+            color: #09385a;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; 
+        }
+
+        input[type="text"]:hover,
+        input[type="password"]:hover,
+        input[type="email"]:hover,
+        input[type="radio"]:hover,
+        input[type="button"]:hover {
+            background-color: rgba(255, 255, 255, 0.8); 
+        }
+
+        label:hover {
+            color: #09385a; 
+        }
+    </style>
+    <script>
+        function checkUsername() 
+        {
+            var userNameInput = document.getElementById('username');
+
+            var submitButton = document.getElementById('submit');
+
+            if (userNameInput.value.length > 0) 
+
+            {
+                submitButton.disabled = false;
+
+            } 
+            
+            else 
+            {
+                submitButton.disabled = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <form action="congratsgif.gif" class="form-horizontal" >
+            <label>User Name</label> <br>
+            <input type="text" required="required" id="username"  autocomplete="off" > <br>
+            <input type="button" value="Check Username" onclick="checkUsername()"> <br>
+            <label>Select Valid Gender:-</label><br>
+            <input type="radio" name="gd" />&#9794;
+            <input type="radio" name="gd" />&#9792;
+            <input type="radio" name="gd" />&#9893;<br>
+            <label>Email</label> <br>
+            <input type="email" required="required"  autocomplete="off" > <br>
+            <label>Password</label><br>
+            <input type="password"  required="required"> <br>
+            <label>Confirm Password</label><br>
+            <input type="password" required="required"> <br><br>
+            <input type="submit" value="Register" class="btn btn-primary" id="submit" disabled>&nbsp;&nbsp;
+            <input type="reset" value="Cancel" id="action" class="btn btn-secondary">
+        </form>
+    </center>
+</body>
+</html>
